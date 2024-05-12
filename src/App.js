@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-
+import facebookLogo from './facebook.jpg';
+import instaLogo from './insta.png';
+import twitterLogo from './X.jpg';
+import mailLogo from './email.jpg';
+import phoneLogo from './tel.jpg';
 const initialProducts = [
   { id: 1, name: 'Pocket Miel Aphrodisiaque', description: 'Pot de miel 70g', imageUrl: 'Pot300.png' },
   { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g',imageUrl: 'Pot300.png' },
@@ -126,31 +130,59 @@ function ContactPage() {
   return (
     <div className="tab-content active">
       <h2>Contactez-nous</h2>
-      <form>
-        <label htmlFor="name">Nom:</label>
-        <input type="text" id="name" name="name" />
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-      <div className="contact-info">
-        <h3>Coordonnées de contact:</h3>
-        <p>Adresse e-mail: contact@mielaphrodisiaque.com</p>
-        <p>Numéro de téléphone: +123456789</p>
-        <p>Adresse postale: 123 Rue du Miel, 75000 Paris</p>
-        <p>Horaires d'ouverture: Lundi - Vendredi: 9h00 - 18h00</p>
-        <p>Réseaux sociaux:</p>
-        <ul className="social-links">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+      <div className="contact-container">
+        <div className="contact-form">
+          <form>
+            <label htmlFor="name">Nom:</label>
+            <input type="text" id="name" name="name" />
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+        <div className="contact-info">
+          <h3>Coordonnées de contact:</h3>
+          <p><img src={mailLogo} alt="Mail" /> Adresse e-mail: contact@mielaphrodisiaque.com</p>
+          <p><img src={phoneLogo} alt="Phone" /> Numéro de téléphone: +123456789</p>
+          <p>Réseaux sociaux:</p>
+          <ul className="social-links">
+            <li><a href="#"><img src={facebookLogo} alt="Facebook" /></a></li>
+            <li><a href="#"><img src={instaLogo} alt="Instagram" /></a></li>
+            <li><a href="#"><img src={twitterLogo} alt="Twitter" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="video-container">
+        <video
+          autoPlay
+          loop
+          muted
+          className="video"
+          width="100%"
+          height="auto"
+        >
+          <source src="./fond2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="map-container">
+        <h3>Localisation:</h3>
+        <iframe
+          title="Adresse"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.581694631136!2d5.886126115690148!3d43.09685479914529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9f94c2e2f3f0b%3A0xa3f733bf77d55b7d!2s83500%20La%20Seyne-sur-Mer!5e0!3m2!1sen!2sfr!4v1623378296870!5m2!1sen!2sfr"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   );
 }
+
 
 export default App;
 

@@ -1,5 +1,16 @@
 /* App.css */
 
+/* Déclaration de la police */
+@font-face {
+  font-family: 'Policenv';
+  src: url('./policenv1.otf') format('truetype');
+}
+
+/* Appliquer la police au body */
+body {
+  font-family: 'Policenv', sans-serif;
+}
+
 /* Reset CSS */
 * {
   box-sizing: border-box;
@@ -7,13 +18,8 @@
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
-
 .header {
-  background-color: #fff;
+  background-color: #FFD700; /* Jaune doré - Couleur principale */
   padding: 20px;
   display: flex;
   align-items: center;
@@ -41,13 +47,18 @@ body {
   text-decoration: none;
   color: #333;
   padding: 0 20px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Transition de couleur */
 }
 
+/* Animation pour le changement de couleur lors du survol */
 .nav-links a:hover {
-  color: #666;
+  color: #8B4513; /* Marron - Accent */
 }
 
+/* Animation pour le changement de couleur lorsque l'onglet est actif */
+.nav-links a.active {
+  color: #8B4513; /* Marron - Accent */
+}
 .search-form {
   display: flex;
   align-items: center;
@@ -63,7 +74,7 @@ body {
 
 .search-form button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #8B4513; /* Marron - Accent */
   color: white;
   border: none;
   border-radius: 4px;
@@ -72,8 +83,9 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Animation pour le changement de couleur du bouton de recherche lors du survol */
 .search-form button:hover {
-  background-color: #45a049;
+  background-color: #D2B48C; /* Beige - Accent */
 }
 
 .content {
@@ -81,11 +93,12 @@ body {
 }
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #F5F5F5; /* Beige - Couleur de fond */
+  color: #333;
   text-align: center;
   padding: 20px;
 }
+
 
 /* Tabs */
 .tab-content {
@@ -132,3 +145,71 @@ body {
   object-fit: cover; /* Rogner l'image pour s'adapter à la taille spécifiée */
 }
 
+/* Réduire la taille des logos des réseaux sociaux */
+.social-links img {
+  width: 30px; /* Définir la largeur */
+  height: auto; /* Ajuster la hauteur automatiquement */
+}
+
+.contact-info img {
+  width: 30px; /* Définir la largeur */
+  height: auto; /* Ajuster la hauteur automatiquement */
+}
+
+.contact-form {
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  margin-bottom: 10px; /* Espacement vertical */
+}
+
+.contact-info {
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement à l'intérieur */
+  margin-bottom: 20px; /* Espacement en dessous */
+}
+
+.social-links img {
+  margin-right: 10px; /* Marge à droite pour espacer */
+}
+
+.map-container {
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement à l'intérieur */
+}
+
+h2 {
+  border-bottom: 1px solid #ccc; /* Bordure en bas */
+  padding-bottom: 10px; /* Espacement en dessous */
+  margin-bottom: 20px; /* Espacement en dessous */
+}
+
+.video-container {
+  width: 100%;
+  height: 350px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* La vidéo remplit le conteneur tout en conservant les proportions et en coupant les parties excédentaires */
+}
+/* Onglets */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
