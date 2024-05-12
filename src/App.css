@@ -213,3 +213,19 @@ h2 {
 .tab-content.active {
   display: block;
 }
+
+.phone-frame {
+  position: relative;
+  width: 360px; /* Largeur du cadre de téléphone */
+  height: 640px; /* Hauteur du cadre de téléphone */
+  background-color: black; /* Couleur de fond du cadre */
+  border-radius: 30px; /* Bord arrondi du cadre */
+  overflow: hidden; /* Cacher le contenu qui dépasse du cadre */
+  margin: 0 auto; /* Centrer le cadre horizontalement */
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajuster la vidéo pour remplir le cadre sans déformation */
+}

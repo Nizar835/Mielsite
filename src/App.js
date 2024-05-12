@@ -8,7 +8,7 @@ import mailLogo from './email.jpg';
 import phoneLogo from './tel.jpg';
 const initialProducts = [
   { id: 1, name: 'Pocket Miel Aphrodisiaque', description: 'Pot de miel 70g', imageUrl: 'Pot300.png' },
-  { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g',imageUrl: 'Pot300.png' },
+  { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g', imageUrl: 'Pot300.png' },
 ];
 
 function App() {
@@ -37,7 +37,6 @@ function App() {
           <nav className="nav-links">
             <Link to="/">Accueil</Link>
             <Link to="/products">Nos Produits</Link>
-            <Link to="/about">À Propos</Link>
             <Link to="/contact">Contact</Link>
           </nav>
           <form className="search-form" onSubmit={handleSearch}>
@@ -54,12 +53,11 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage products={searchQuery ? searchResults : initialProducts} />} />
-            <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <footer className="footer">
-          <p>&copy; 2024 MIEL Aphrodisiaque. Tous droits réservés.</p>
+          <p>&copy; 2024 La Ruche 83. Tous droits réservés.</p>
         </footer>
       </div>
     </Router>
@@ -69,19 +67,39 @@ function App() {
 function HomePage() {
   return (
     <div className="tab-content active">
-      <video autoPlay loop muted className="background-video">
-        <source src="/fondv.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
       <div className="content-overlay">
         <div className="content">
           <h2>Bienvenue sur MIEL Aphrodisiaque</h2>
-          <p>Découvrez nos produits de miel aphrodisiaque de qualité supérieure.</p>
+
+          <p>
+            Découvrez nos produits de miel aphrodisiaque de qualité supérieure. Nous vous proposons une sélection de miels naturels et artisanaux, récoltés avec soin dans nos ruches. Chaque pot de miel est produit avec amour et expertise, en respectant les normes les plus strictes de qualité.
+          </p>
+          <video autoPlay loop muted className="background-video">
+            <source src="/fondv.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Qu'est-ce qui rend notre miel aphrodisiaque unique ?</h3>
+          <p>
+            Notre miel aphrodisiaque est issu de fleurs sélectionnées pour leurs propriétés aphrodisiaques naturelles. Il est transformé de manière artisanale pour préserver tous ses bienfaits, puis emballé avec soin pour garantir sa fraîcheur et son goût authentique. Approuvé par nos experts en santé et en nutrition, notre collection de miels aphrodisiaques saura répondre à vos attentes.
+          </p>
+          <div className="phone-frame">
+            <video autoPlay loop muted className="phone-screen">
+              <source src="/Composition.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p className='IND'>
+            Pour découvrir nos produits, consultez l'onglet dédié "Nos Produits". Pour toute commande ou demande d'information, n'hésitez pas à nous contacter via l'onglet "Contact". Nous serons ravis de répondre à toutes vos questions et de vous accompagner dans votre expérience avec notre miel aphrodisiaque.
+          </p>
+
         </div>
       </div>
     </div>
   );
 }
+
+
 
 
 function ProductsPage({ products }) {
@@ -117,15 +135,6 @@ function Product({ name, description, imageUrl }) {
 }
 
 
-function AboutPage() {
-  return (
-    <div className="tab-content active">
-      <h2>À Propos</h2>
-      <p>En savoir plus sur MIEL Aphrodisiaque et notre engagement envers la qualité.</p>
-    </div>
-  );
-}
-
 function ContactPage() {
   return (
     <div className="tab-content active">
@@ -144,14 +153,13 @@ function ContactPage() {
         </div>
         <div className="contact-info">
           <h3>Coordonnées de contact:</h3>
-          <p><img src={mailLogo} alt="Mail" /> Adresse e-mail: contact@mielaphrodisiaque.com</p>
-          <p><img src={phoneLogo} alt="Phone" /> Numéro de téléphone: +123456789</p>
+          <p><img src={mailLogo} alt="Mail" /> Adresse e-mail: laruche83@gmail.com</p>
+          <p><img src={phoneLogo} alt="Phone" /> Numéro de téléphone: +33621359640</p>
           <p>Réseaux sociaux:</p>
           <ul className="social-links">
-            <li><a href="#"><img src={facebookLogo} alt="Facebook" /></a></li>
-            <li><a href="#"><img src={instaLogo} alt="Instagram" /></a></li>
-            <li><a href="#"><img src={twitterLogo} alt="Twitter" /></a></li>
+            <li><a href="https://www.instagram.com/laruche.miel83?igsh=NnJkY3lxendsN2c0" target="_blank" rel="noopener noreferrer"><img src={instaLogo} alt="Instagram" /></a></li>
           </ul>
+
         </div>
       </div>
       <div className="video-container">
