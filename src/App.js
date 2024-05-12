@@ -6,6 +6,7 @@ import instaLogo from './insta.png';
 import twitterLogo from './X.jpg';
 import mailLogo from './email.jpg';
 import phoneLogo from './tel.jpg';
+import snaplogo from './snap.jpg'
 const initialProducts = [
   { id: 1, name: 'Pocket Miel Aphrodisiaque', description: 'Pot de miel 70g', imageUrl: 'Pot300.png' },
   { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g', imageUrl: 'Pot300.png' },
@@ -101,7 +102,6 @@ function HomePage() {
 
 
 
-
 function ProductsPage({ products }) {
   return (
     <div className="tab-content active">
@@ -157,7 +157,23 @@ function ContactPage() {
           <p><img src={phoneLogo} alt="Phone" /> Numéro de téléphone: +33621359640</p>
           <p>Réseaux sociaux:</p>
           <ul className="social-links">
-            <li><a href="https://www.instagram.com/laruche.miel83?igsh=NnJkY3lxendsN2c0" target="_blank" rel="noopener noreferrer"><img src={instaLogo} alt="Instagram" /></a></li>
+            <p>
+              <a href="https://www.instagram.com/laruche.miel83?igsh=NnJkY3lxendsN2c0" target="_blank" rel="noopener noreferrer">
+                <img src={instaLogo} alt="Instagram" />
+              </a>
+              <a>
+                laruche.miel83
+              </a>
+            </p>
+            <p>
+              <a href="https://www.snapchat.com/add/laruchemiel83" target="_blank" rel="noopener noreferrer">
+                <img src={snaplogo} alt="Snapchat" style={{ marginRight: '10px', width: '50px' }} />
+              </a>
+              <span style={{ marginLeft: '10px' }}>laruchemiel83</span>
+              <img className='Snap' src="/snapcode.jpg" alt="Snapcode" style={{ width: '100px', marginLeft: '10px' }} />
+            </p>
+
+
           </ul>
 
         </div>
