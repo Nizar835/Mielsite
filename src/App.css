@@ -256,6 +256,7 @@ h2 {
   overflow: hidden; /* Cacher le contenu qui dépasse du cadre */
   margin: 0 auto; /* Centrer le cadre horizontalement */
   margin-top: 10px; /* Ajout d'une marge en haut pour l'espace avec la vidéo */
+  margin-bottom: 10px;
 }
 
 .phone-screen {
