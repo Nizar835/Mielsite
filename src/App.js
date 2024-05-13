@@ -6,7 +6,8 @@ import instaLogo from './insta.png';
 import twitterLogo from './X.jpg';
 import mailLogo from './email.jpg';
 import phoneLogo from './tel.jpg';
-import snaplogo from './snap.jpg'
+import snaplogo from './snap.jpg';
+
 const initialProducts = [
   { id: 1, name: 'Pocket Miel Aphrodisiaque', description: 'Pot de miel 70g', imageUrl: 'Pot300.png' },
   { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g', imageUrl: 'Pot300.png' },
