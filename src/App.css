@@ -22,7 +22,8 @@ body {
 }
 
 .header {
-  background-color: #FFD700; /* Jaune doré - Couleur principale */
+  background-color: #FFD700;
+  /* Jaune doré - Couleur principale */
   padding: 20px;
   display: flex;
   align-items: center;
@@ -33,30 +34,39 @@ body {
 /* Média Query pour les appareils mobiles */
 @media screen and (max-width: 600px) {
   .header {
-    flex-direction: column; /* Passage en colonne */
-    align-items: flex-start; /* Alignement à gauche */
-    padding: 10px; /* Réduction du padding */
+    flex-direction: column;
+    /* Passage en colonne */
+    align-items: flex-start;
+    /* Alignement à gauche */
+    padding: 10px;
+    /* Réduction du padding */
   }
 
   .nav-links {
-    margin-top: 10px; /* Espacement entre les éléments */
+    margin-top: 10px;
+    /* Espacement entre les éléments */
   }
 
   .nav-links a {
-    padding: 5px 0; /* Réduction de l'espacement vertical */
+    padding: 5px 0;
+    /* Réduction de l'espacement vertical */
   }
 
   .search-form {
-    margin-top: 10px; /* Espacement du formulaire de recherche */
+    margin-top: 10px;
+    /* Espacement du formulaire de recherche */
   }
 
   .search-form input[type="text"] {
-    width: 100%; /* Utilisation de toute la largeur disponible */
-    margin-right: 0; /* Suppression de la marge à droite */
+    width: 100%;
+    /* Utilisation de toute la largeur disponible */
+    margin-right: 0;
+    /* Suppression de la marge à droite */
   }
 
   .search-form button {
-    padding: 10px; /* Ajustement du padding du bouton */
+    padding: 10px;
+    /* Ajustement du padding du bouton */
   }
 }
 
@@ -80,18 +90,22 @@ body {
   text-decoration: none;
   color: #333;
   padding: 0 20px;
-  transition: color 0.3s ease; /* Transition de couleur */
+  transition: color 0.3s ease;
+  /* Transition de couleur */
 }
 
 /* Animation pour le changement de couleur lors du survol */
 .nav-links a:hover {
-  color: #8B4513; /* Marron - Accent */
+  color: #8B4513;
+  /* Marron - Accent */
 }
 
 /* Animation pour le changement de couleur lorsque l'onglet est actif */
 .nav-links a.active {
-  color: #8B4513; /* Marron - Accent */
+  color: #8B4513;
+  /* Marron - Accent */
 }
+
 .search-form {
   display: flex;
   align-items: center;
@@ -107,7 +121,8 @@ body {
 
 .search-form button {
   padding: 10px 20px;
-  background-color: #8B4513; /* Marron - Accent */
+  background-color: #8B4513;
+  /* Marron - Accent */
   color: white;
   border: none;
   border-radius: 4px;
@@ -118,7 +133,8 @@ body {
 
 /* Animation pour le changement de couleur du bouton de recherche lors du survol */
 .search-form button:hover {
-  background-color: #D2B48C; /* Beige - Accent */
+  background-color: #D2B48C;
+  /* Beige - Accent */
 }
 
 .content {
@@ -126,7 +142,8 @@ body {
 }
 
 .footer {
-  background-color: #F5F5F5; /* Beige - Couleur de fond */
+  background-color: #F5F5F5;
+  /* Beige - Couleur de fond */
   color: #333;
   text-align: center;
   padding: 20px;
@@ -172,25 +189,33 @@ body {
   margin-right: 10px;
 }
 
-.product-image{
-  max-width: 300px; /* Définir la largeur maximale souhaitée */
-  max-height: 300px; /* Définir la hauteur maximale souhaitée */
-  object-fit: cover; /* Rogner l'image pour s'adapter à la taille spécifiée */
+.product-image {
+  max-width: 300px;
+  /* Définir la largeur maximale souhaitée */
+  max-height: 300px;
+  /* Définir la hauteur maximale souhaitée */
+  object-fit: cover;
+  /* Rogner l'image pour s'adapter à la taille spécifiée */
 }
 
 /* Réduire la taille des logos des réseaux sociaux */
 .social-links img {
-  width: 30px; /* Définir la largeur */
-  height: auto; /* Ajuster la hauteur automatiquement */
+  width: 30px;
+  /* Définir la largeur */
+  height: auto;
+  /* Ajuster la hauteur automatiquement */
 }
 
 .contact-info img {
-  width: 30px; /* Définir la largeur */
-  height: auto; /* Ajuster la hauteur automatiquement */
+  width: 30px;
+  /* Définir la largeur */
+  height: auto;
+  /* Ajuster la hauteur automatiquement */
 }
 
 .contact-form {
-  background-color: #f9f9f9; /* Couleur de fond légère */
+  background-color: #f9f9f9;
+  /* Couleur de fond légère */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -201,43 +226,58 @@ body {
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  margin-bottom: 10px; /* Espacement vertical */
+  margin-bottom: 10px;
+  /* Espacement vertical */
 }
 
 .contact-info {
-  border: 1px solid #ccc; /* Bordure */
-  border-radius: 8px; /* Coins arrondis */
-  padding: 20px; /* Espacement à l'intérieur */
-  margin-bottom: 20px; /* Espacement en dessous */
+  border: 1px solid #ccc;
+  /* Bordure */
+  border-radius: 8px;
+  /* Coins arrondis */
+  padding: 20px;
+  /* Espacement à l'intérieur */
+  margin-bottom: 20px;
+  /* Espacement en dessous */
 }
 
 .social-links img {
-  margin-right: 10px; /* Marge à droite pour espacer */
+  margin-right: 10px;
+  /* Marge à droite pour espacer */
 }
 
 .map-container {
-  border: 1px solid #ccc; /* Bordure */
-  border-radius: 8px; /* Coins arrondis */
-  padding: 20px; /* Espacement à l'intérieur */
+  border: 1px solid #ccc;
+  /* Bordure */
+  border-radius: 8px;
+  /* Coins arrondis */
+  padding: 20px;
+  /* Espacement à l'intérieur */
 }
 
 h2 {
-  border-bottom: 1px solid #ccc; /* Bordure en bas */
-  padding-bottom: 10px; /* Espacement en dessous */
-  margin-bottom: 20px; /* Espacement en dessous */
+  border-bottom: 1px solid #ccc;
+  /* Bordure en bas */
+  padding-bottom: 10px;
+  /* Espacement en dessous */
+  margin-bottom: 20px;
+  /* Espacement en dessous */
 }
 
 .video-container {
   width: 100%;
-  height: 350px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  height: 350px;
+  /* Vous pouvez ajuster la hauteur selon vos besoins */
   overflow: hidden;
 }
 
 .video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* La vidéo remplit le conteneur tout en conservant les proportions et en coupant les parties excédentaires */
+  object-fit: cover;
+  /* La vidéo remplit le conteneur tout en conservant les proportions et en coupant les parties excédentaires */
 }
+
 /* Onglets */
 .tab-content {
   display: none;
@@ -248,22 +288,35 @@ h2 {
 }
 
 .phone-frame {
-  width: calc(100% - 20px); /* Utilisation de toute la largeur disponible avec une marge de 10px de chaque côté */
-  max-width: 360px; /* Largeur maximale du cadre de téléphone */
-  height: auto; /* Ajustement automatique de la hauteur en fonction de la largeur */
-  background-color: black; /* Couleur de fond du cadre */
-  border-radius: 30px; /* Bord arrondi du cadre */
-  overflow: hidden; /* Cacher le contenu qui dépasse du cadre */
-  margin: 0 auto; /* Centrer le cadre horizontalement */
-  margin-top: 10px; /* Ajout d'une marge en haut pour l'espace avec la vidéo */
-  margin-bottom: 10px;
+  position: relative;
+  max-width: 400px;
+  /* Taille maximale du téléphone */
+  margin: 0 auto;
+  /* Centrer horizontalement */
+  overflow: hidden;
+  /* Cacher le dépassement */
+  border: 16px solid black;
+  /* Bordures du téléphone */
+  border-radius: 30px;
+  /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  /* Ombre */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .phone-screen {
-  width: 100%; /* Utilisation de toute la largeur disponible */
-  height: 100%; /* Utilisation de toute la hauteur disponible */
-  object-fit: cover; /* Ajuster la vidéo pour remplir le cadre sans déformation */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Adapter la vidéo à la taille */
+  border-radius: 14px;
+  /* Coins arrondis pour l'écran */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 
 
 /* Ajoutez ces règles à la fin de votre fichier CSS */
@@ -271,20 +324,25 @@ h2 {
 /* Styles pour les appareils mobiles (largeur <= 600px) */
 @media screen and (max-width: 600px) {
   .nav-links {
-    flex-direction: column; /* Afficher les liens verticalement */
+    flex-direction: column;
+    /* Afficher les liens verticalement */
   }
 
   .nav-links a {
-    padding: 10px 0; /* Réduire l'espacement vertical des liens */
+    padding: 10px 0;
+    /* Réduire l'espacement vertical des liens */
   }
 
   .search-form input[type="text"] {
-    width: 100%; /* Utiliser toute la largeur disponible */
-    margin-right: 0; /* Supprimer la marge à droite */
+    width: 100%;
+    /* Utiliser toute la largeur disponible */
+    margin-right: 0;
+    /* Supprimer la marge à droite */
   }
 
   .search-form button {
-    padding: 10px; /* Ajuster le rembourrage du bouton */
+    padding: 10px;
+    /* Ajuster le rembourrage du bouton */
   }
 }
 
@@ -292,23 +350,30 @@ h2 {
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrer horizontalement */
-  flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
-  margin-top: 20px; /* Espacement du titre */
+  justify-content: center;
+  /* Centrer horizontalement */
+  flex-wrap: wrap;
+  /* Permettre le retour à la ligne si nécessaire */
+  margin-top: 20px;
+  /* Espacement du titre */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
-  padding: 10px 20px; /* Espacement des liens */
-  transition: color 0.3s ease; /* Transition de couleur */
+  padding: 10px 20px;
+  /* Espacement des liens */
+  transition: color 0.3s ease;
+  /* Transition de couleur */
 }
 
 /* Styles pour la barre de recherche */
 .search-form {
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  margin-top: 10px; /* Espacement du titre */
+  justify-content: center;
+  /* Centrer horizontalement */
+  margin-top: 10px;
+  /* Espacement du titre */
 }
 
 .search-form input[type="text"] {
@@ -321,7 +386,8 @@ h2 {
 
 .search-form button {
   padding: 10px 20px;
-  background-color: #8B4513; /* Marron - Accent */
+  background-color: #8B4513;
+  /* Marron - Accent */
   color: white;
   border: none;
   border-radius: 4px;
@@ -331,6 +397,92 @@ h2 {
 }
 
 .background-video {
-  width: 100%; /* Utilisation de toute la largeur disponible */
-  height: auto; /* Ajustement automatique de la hauteur en fonction de la largeur */
+  width: 100%;
+  /* Utilisation de toute la largeur disponible */
+  height: auto;
+  /* Ajustement automatique de la hauteur en fonction de la largeur */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Média Query pour les appareils mobiles */
+@media screen and (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    /* Passage en colonne */
+    align-items: center;
+    /* Centrer horizontalement */
+    padding: 10px;
+    /* Réduction du padding */
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    /* Réduction de l'espacement vertical */
+  }
+
+  .search-form {
+    margin-top: 10px;
+    /* Espacement du formulaire de recherche */
+    text-align: center;
+    /* Centrer horizontalement */
+  }
+
+  .search-form input[type="text"] {
+    margin-right: 0;
+    /* Suppression de la marge à droite */
+  }
+}
+
+/* Styles pour la barre de navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centrer horizontalement */
+  margin-top: 20px;
+  /* Espacement du titre */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  /* Espacement des liens */
+  transition: color 0.3s ease;
+  /* Transition de couleur */
+}
+
+/* Styles pour la barre de recherche */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centrer horizontalement */
+  margin-top: 10px;
+  /* Espacement du titre */
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #8B4513;
+  /* Marron - Accent */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.IND{
+  background-color: orange;
 }
