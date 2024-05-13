@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import facebookLogo from './facebook.jpg';
+
 import instaLogo from './insta.png';
-import twitterLogo from './X.jpg';
+
 import mailLogo from './email.jpg';
 import phoneLogo from './tel.jpg';
 import snaplogo from './snap.jpg'
+import axios from 'axios';
 const initialProducts = [
   { id: 1, name: 'Pocket Miel Aphrodisiaque', description: 'Pot de miel 70g', imageUrl: 'Pot300.png' },
   { id: 2, name: 'Tank Miel Aphrodisiaque', description: 'Pot de miel 300g', imageUrl: 'Pot300.png' },
@@ -141,7 +142,7 @@ function ContactPage() {
       <h2>Contactez-nous</h2>
       <div className="contact-container">
         <div className="contact-form">
-          <form>
+          <form action="/send-email" method="post">
             <label htmlFor="name">Nom:</label>
             <input type="text" id="name" name="name" />
             <label htmlFor="email">Email:</label>
@@ -172,10 +173,7 @@ function ContactPage() {
               <span style={{ marginLeft: '10px' }}>laruchemiel83</span>
               <img className='Snap' src="/snapcode.jpg" alt="Snapcode" style={{ width: '100px', marginLeft: '10px' }} />
             </p>
-
-
           </ul>
-
         </div>
       </div>
       <div className="video-container">
@@ -206,8 +204,4 @@ function ContactPage() {
     </div>
   );
 }
-
-
 export default App;
-
-
